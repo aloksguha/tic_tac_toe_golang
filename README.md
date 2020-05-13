@@ -12,12 +12,12 @@ The application is designed by implementing **Command design pattern**. The four
 First, install [GoLang](https://golang.org/doc/install). Then follow instruction as per your operating system
 
 ## How to run the test(s)
-<project-root>$ : go test ./..
+tic_tac_toe_golang $ go test ./..
 
 ## How to build the excecutable(s)
-<project-root>$ : go build   <build-config> ? optional
+tic_tac_toe_golang $ : go build   <build-config> ? optional
 
-go build will build for current operating system.
+**go build** will build for current operating system.
 
 ## Author
 * Alok Guha (aloksguha@gmail.com)

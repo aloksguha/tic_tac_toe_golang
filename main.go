@@ -21,11 +21,11 @@ func main() {
 		player2 = "player-2"
 	}
 
-	degreeOfMatrix := 3
-	fmt.Print("Enter Degree of Tic-Tac-Toe matrix (3) : ")
-	if n, err := fmt.Scanf("%d", &degreeOfMatrix); err != nil || n != 1 {
-		player2 = "player-2"
-	}
+	//degreeOfMatrix := 3
+	//fmt.Print("Enter Degree of Tic-Tac-Toe matrix (3) : ")
+	//if n, err := fmt.Scanf("%d", &degreeOfMatrix); err != nil || n != 1 {
+	//
+	//}
 
 	//initializing human players
 	hp1 := tic_tac_toe.NewHumanPlayer(player1, "X")

@@ -52,11 +52,11 @@ func (g *Game) Start() {
 		g.printInfo()
 		i, j, err := g.current.GetMove(g.board)
 		if err != nil {
-			fmt.Print(utils.Warn("Invalid inputs \n"))
+			fmt.Print(utils.Warn("Invalid input \n"))
 			continue
 		}
 		if i < 0 || i > 2 || j < 0 || j > 2 {
-			fmt.Print(utils.Warn("Invalid inputs \n"))
+			fmt.Print(utils.Warn("Invalid input \n"))
 			continue
 		}
 

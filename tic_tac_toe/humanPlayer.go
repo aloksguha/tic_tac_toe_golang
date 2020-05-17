@@ -12,13 +12,6 @@ func NewHumanPlayer(name string, mark string) *HumanPlayer {
 	}
 }
 
-type Player interface {
-	GetMove(*board) (int, int, error)
-	ConvertMove(int) (int, int, error)
-	Mark() string
-	Name() string
-}
-
 type HumanPlayer struct {
 	name string
 	mark string

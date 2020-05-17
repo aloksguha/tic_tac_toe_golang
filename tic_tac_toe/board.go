@@ -15,6 +15,24 @@ func newBoard() *board {
 	return &b
 }
 
+// copy creates a copy of the original board.
+func (b board) copy() *board {
+	return &b
+}
+
+// getAvailablePos returns all empty spots of the board. This is needed for Minimax algorithm
+func (b *board) getAvailablePos() [][2]int {
+	availPos := [][2]int{}
+	for i := range b {
+		for j := range b[i] {
+			if b[i][j] == "_" {
+				availPos = append(availPos, [2]int{i, j})
+			}
+		}
+	}
+	return availPos
+}
+
 // String returns the string representation of a board.
 func (b *board) String() string {
 	str := "\n    "
@@ -38,6 +56,12 @@ func (b *board) emptyCount() int {
 		}
 	}
 	return count
+}
+
+
+
+func (g *board) getLegalMoves(){
+
 }
 
 // This method return whether match is won or nor

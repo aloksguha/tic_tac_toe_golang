@@ -7,9 +7,6 @@ This tic-tac-toe game accepts user commnads-line inputs as arguments and progres
 
 
 
-## Structure of the application
-The application is designed by implementing **Command design pattern**. The four possible command's translate into different
-
 ## How to setup ?
 
 First, install [GoLang](https://golang.org/doc/install). Then follow instruction as per your operating system
